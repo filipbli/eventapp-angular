@@ -1,5 +1,5 @@
 <div class="grid justify-items-center w-full">
-    <ng-container *ngFor="let event of eventsList">
+    <ng-container *ngFor="let event of sortByDate(eventsList)">
         <div class="w-4/5 min-h-44 bg-slate-200 rounded-lg m-2">
             <h1 class="text-4xl font-bold pl-4 p-2">{{event.id}} {{event.name}}</h1>
             <div>                

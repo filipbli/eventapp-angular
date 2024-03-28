@@ -17,7 +17,6 @@ export class EventFormComponent implements OnInit{
   name: string;
   description: string;
   date: Date;
-
   constructor(private eventsService: EventService) {
     this.name = '';
     this.description = '';
@@ -48,5 +47,4 @@ export class EventFormComponent implements OnInit{
     this.date = new Date;
     this.description = '';
   }
-
 }
