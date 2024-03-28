@@ -1,0 +1,22 @@
+{
+  "events": [
+    {
+      "id": "0",
+      "name": "Zawody",
+      "date": "2024-03-27",
+      "description": "Zawody piłkarskie klas 4"
+    },
+    {
+      "id": "1",
+      "name": "Dzień Plecaka",
+      "date": "2024-03-26",
+      "description": "Przynieś swój ulubiony przedmiot jako plecak"
+    },
+    {
+      "id": "2",
+      "name": "Dzień skarpet",
+      "date": "2024-03-29",
+      "description": "Załóż fikuśne skarpetki stoopki"
+    }
+  ]
+}

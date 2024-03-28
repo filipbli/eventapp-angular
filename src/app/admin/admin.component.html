@@ -1,0 +1,25 @@
+<div class="w-full grid justify-items-center">
+    <app-event-form class="m-4 w-11/12"></app-event-form>
+    <div class="w-11/12">
+        <ul class="w-full h-14 flex border-2 border-blue-800 bg-blue-400 rounded-t">
+            <li class="w-1/6 text-2xl text-center font-bold">Id</li>
+            <li class="w-1/6 text-2xl text-center font-bold">Nazwa</li>
+            <li class="w-1/6 text-2xl text-center font-bold">Data</li>
+            <li class="w-1/2 text-2xl text-center font-bold">Opis</li>
+            <li class="w-1/6 text-2xl text-center font-bold">Funkcja</li>
+        </ul>
+        <ng-container *ngFor="let event of eventsList">
+            <div>
+                <ul class="w-full h-14 flex">
+                    <li class="w-1/6 text-center border-2 border-blue-800">{{event.id}}</li>
+                    <li class="w-1/6 text-center border-2 border-blue-800">{{event.name}}</li>
+                    <li class="w-1/6 text-center border-2 border-blue-800">{{event.date | date: 'shortDate'}}</li>
+                    <li class="w-1/2 text-center border-2 border-blue-800 line-clamp-2">{{event.description}}</li>
+                    <li class="w-1/6 text-center font-bold border-2 border-blue-800">
+                        <button (click)="deleteEvent(event)">X</button>
+                    </li>
+                </ul>
+            </div>
+        </ng-container>
+    </div>
+</div>

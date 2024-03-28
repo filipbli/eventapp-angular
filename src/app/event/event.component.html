@@ -1,0 +1,17 @@
+<div class="grid justify-items-center w-full">
+    <ng-container *ngFor="let event of eventsList">
+        <div class="w-4/5 min-h-44 bg-slate-200 rounded-lg m-2">
+            <h1 class="text-4xl font-bold pl-4 p-2">{{event.id}} {{event.name}}</h1>
+            <div>                
+                <h2 class="text-lg font-bold pl-5">Data wydarzenia: {{event.date | date:'shortDate'}}</h2>
+                <p class="text-lg px-5">{{event.description}}</p>
+            </div>
+            <div class="flex justify-end">
+                <button (click)="selectEvent(event)" class="rounded-lg text-2xl text-black 
+                border-2 border-slate-900 px-2 mr-3" routerLink="/selectedEventDetails"
+                routerLinkActive="active" ariaCurrentWhenActive="page">...</button>
+            </div>
+        </div>
+    </ng-container>    
+</div>
+
