@@ -1,13 +1,15 @@
-<div>
-    <div>Baner</div>
-    <div>
-        <h1 class="text-5xl">{{selectedEvent?.id}}</h1>
-    </div>
-    <div>
-        <p>{{selectedEvent?.description}}opis</p>
-    </div>
-    <div>
-        <button routerLink="/eventsList" routerLinkActive="active" ariaCurrentWhenActive="page">Back</button>
+<div class="w-full h-1/5 grid place-items-center">
+    <div class="w-11/12 bg-slate-200 rounded-xl">
+        <div class="grid place-items-center">
+            <img [src]="getImage(1)" class="w-11/12 h-96 pt-5">
+            <h1 class="text-5xl p-5">{{selectedEvent?.name}}</h1>
+        </div>
+        <div class="grid place-items-start my-5 mx-10">
+            <p class="text-2xl">{{selectedEvent?.description}}</p>
+        </div>
+        <div class="grid place-items-center m-5">
+            <button routerLink="/eventsList" routerLinkActive="active" ariaCurrentWhenActive="page" class="text-2xl font-bold bg-blue-500 text-white uppercase rounded px-3 py-1">Powrót</button>
+        </div>
     </div>
 </div>
 
